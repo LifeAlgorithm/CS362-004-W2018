@@ -1228,7 +1228,7 @@ int effectEmbargo(struct gameState *state, int currentPlayer, int handPos, int c
       return 0;
 }
 
-effectSteward(struct gameState *state, int currentPlayer, int handPos, int choice1, int choice2, int choice3)
+int effectSteward(struct gameState *state, int currentPlayer, int handPos, int choice1, int choice2, int choice3)
 {
       if (choice1 == 1)
 	{
