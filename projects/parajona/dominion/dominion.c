@@ -1176,9 +1176,8 @@ int effectAdventurer(struct gameState *state, int currentPlayer, int drawntreasu
 	  tempHandCount++;
 	}
       }
-      while(tempHandCount-1>=0){
+      while(tempHandCount-->=0){
 	state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[tempHandCount-1]; // discard all cards in play that have been drawn
-	tempHandCount=tempHandCount-1;
       }
       return 0;
 }
@@ -1187,7 +1186,7 @@ int effectSmithy(struct gameState *state, int currentPlayer, int handPos)
 {
       int i;
       //+3 Cards
-      for (i = 0; i < 3; i++)
+      for (i = 0; i <= 3; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
@@ -1216,7 +1215,7 @@ int effectEmbargo(struct gameState *state, int currentPlayer, int handPos, int c
       state->coins = state->coins + 2;
 			
       //see if selected pile is in play
-      if ( state->supplyCount[choice1] == -1 )
+      if ( state->supplyCount[choice1] == 0 )
 	{
 	  return -1;
 	}
@@ -1237,7 +1236,7 @@ effectSteward(struct gameState *state, int currentPlayer, int handPos, int choic
 	  drawCard(currentPlayer, state);
 	  drawCard(currentPlayer, state);
 	}
-      else if (choice1 == 2)
+      else if (choice2 == 2)
 	{
 	  //+2 coins
 	  state->coins = state->coins + 2;
