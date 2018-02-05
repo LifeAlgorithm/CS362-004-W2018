@@ -8,7 +8,7 @@ char inputChar()
     int randNum = rand() % 9 + 1;
     switch(randNum){
         case 1:
-	        return '[';
+            return '[';
         case 2:
             return '(';
         case 3:
