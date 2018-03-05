@@ -59,4 +59,5 @@ int main (int argc, char** argv){
 
     printf("%d of 2000 tests passed (Card 1 is treasure)\n", passCounterCard1); 
     printf("%d of 2000 tests passed (Card 2 is treasure)\n", passCounterCard2);
+    return 0;
 }

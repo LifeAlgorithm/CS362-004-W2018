@@ -36,5 +36,6 @@ int main (int argc, char** argv)
     }
 
     printf("Tests for Unit test 1 complete.\n");
+    return 0;
 }
 

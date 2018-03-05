@@ -43,6 +43,7 @@ int main (int argc, char** argv){
     }
 
     printf("%d of 2000 tests passed\n", passCounter);
+    return 0;
 }
 
 

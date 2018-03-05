@@ -58,4 +58,5 @@ int main (int argc, char** argv){
 
     printf("%d of 2000 tests passed (Single player card count)\n", passCounterPlayer); 
     printf("%d of 2000 tests passed (Other players card count)\n", passCounterOthers);
+    return 0;
 }

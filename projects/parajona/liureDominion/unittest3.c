@@ -83,5 +83,6 @@ int main (int argc, char** argv)
         printf("Test - Game initialized with correct amount of duchies: FAILED\n");
     }
     printf("Tests for Unit test 3 complete.\n");
+    return 0;
 }
 

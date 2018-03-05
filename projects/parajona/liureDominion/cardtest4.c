@@ -30,5 +30,6 @@ int main (int argc, char** argv)
     }
  
     printf("Tests for Card test 4 complete.\n");
+    return 0;
 }
 
