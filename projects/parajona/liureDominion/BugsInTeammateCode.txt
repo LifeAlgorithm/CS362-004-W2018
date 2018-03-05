@@ -1,0 +1,9 @@
+Bug 1 - Smithy
+
+Description: drawCard executes for the wrong player.
+Fix: On line 652, change drawCard(currentPlayer + 1, state) to drawCard(currentPlayer, state);
+
+Bug 2 - Adventurer
+Description: deckCount is incorrectly set.
+Fix: On line 664, change the '<=' sign to '<'
+
